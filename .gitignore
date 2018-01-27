@@ -1,3 +1,4 @@
-build/
+dev/build/
 "items for translation.xlsx"
 "items for translation_05-10-2017...xlsx"
+dev/__pycache__
