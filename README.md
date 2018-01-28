@@ -1,5 +1,4 @@
 # XLQSI: An Excel tool for Laboratory Quality Implementation
-=====================
 
 XLQSI is an Excel based implementation of WHO's [Laboratory Quality Stepwise Implementation tool (LQSI)](https://extranet.who.int/lqsi/). The idea of translating the HTML website into an Excel workbook originated in ITech NOM DE L"EQUIPE.
 
@@ -26,6 +25,6 @@ TODO Make different distributions for different usages
 
 ## Contact
 
-Grégoire Lurton, (twitter: grlurton)
+Grégoire Lurton
 
 ## License
