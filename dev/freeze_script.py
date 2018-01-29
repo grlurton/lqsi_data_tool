@@ -16,7 +16,7 @@ def main():
     if os.path.isfile(file_name):
         os.remove(file_name)
     call('7z a -tzip {}.zip data_entry.xlsm'.format(file_name))
-   # call('7z a -tzip {}.zip LICENSE.txt'.format(file_name))
+    call('7z a -tzip {}.zip data_visualization.xlsm'.format(file_name))
     call('7z a -tzip {}.zip build'.format(file_name))
 
 
