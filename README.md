@@ -6,8 +6,6 @@ The full documentation for the project can be accessed (here)[https://grlurton.g
 
 A PDF version of the documentation can be downloaded (here)[https://github.com/grlurton/xlqsi/raw/master/docs/latex/XLQSI.pdf].
 
-
-
 ## Description
 
 XLQSI is composed of two Excel workbooks modules:
@@ -15,11 +13,6 @@ XLQSI is composed of two Excel workbooks modules:
 * __Laboratory Follow-up module:__
 
 Each of these workbooks is Excel based and is enhanced with some Python functions enabled using xlwings.
-
-### Data Entry Module
-
-### Laboratory Follow-up Module
-
 
 ## Installation
 
