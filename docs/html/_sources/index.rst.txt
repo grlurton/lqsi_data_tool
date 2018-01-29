@@ -10,8 +10,12 @@ Documentation for XLQSI's
    :maxdepth: 2
 
    intro
+   general
    create_data_entry
    fill_data_entry
    data_viz
    technical
    contribute
+
+
+A PDF version of this documentation can be downloaded `here <https://github.com/grlurton/xlqsi/raw/master/docs/latex/XLQSI.pdf>`_.

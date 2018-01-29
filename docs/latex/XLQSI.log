@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.28)  28 JAN 2018 01:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.28)  28 JAN 2018 22:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1151,28 +1151,49 @@ Chapter 1.
 
 ] [2]
 Chapter 2.
-<translation_image.png, id=106, 812.03375pt x 72.27pt>
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 133.
+[3
+
+] [4
+
+]
+Chapter 3.
+<security_check.png, id=139, 516.93124pt x 44.165pt>
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 155.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
+File: security_check.png Graphic file (type png)
+
+<use security_check.png>
+Package pdftex.def Info: security_check.png used on input line 155.
+(pdftex.def)             Requested size: 469.75502pt x 40.1356pt.
+
+<translation_image.png, id=143, 812.03375pt x 72.27pt>
 File: translation_image.png Graphic file (type png)
 
 <use translation_image.png>
-Package pdftex.def Info: translation_image.png used on input line 133.
+Package pdftex.def Info: translation_image.png used on input line 169.
 (pdftex.def)             Requested size: 469.75502pt x 41.80743pt.
- [3
+ [5 <./security_check.png> <./translation_image.png>] <define_completion_check.
+png, id=162, 1419.3025pt x 40.15pt>
+File: define_completion_check.png Graphic file (type png)
 
- <./translation_image.png>] [4
+<use define_completion_check.png>
+Package pdftex.def Info: define_completion_check.png used on input line 201.
+(pdftex.def)             Requested size: 469.75502pt x 13.28874pt.
 
-]
-Chapter 3.
-[5] [6
+<import_checklist.png, id=167, 1211.52625pt x 80.3pt>
+File: import_checklist.png Graphic file (type png)
 
-]
+<use import_checklist.png>
+Package pdftex.def Info: import_checklist.png used on input line 216.
+(pdftex.def)             Requested size: 469.75502pt x 31.13551pt.
+ [6 <./define_completion_check.png> <./import_checklist.png>]
 Chapter 4.
-[7] [8
+[7
+
+] [8
 
 ]
 Chapter 5.
@@ -1180,35 +1201,39 @@ Chapter 5.
 
 ]
 Chapter 6.
+[11] [12
+
+]
+Chapter 7.
 (./XLQSI.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
- [11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
+ [13]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
  (./XLQSI.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
 Package rerunfilecheck Info: File `XLQSI.out' has not changed.
-(rerunfilecheck)             Checksum: D6C02AA178F3340459DA98EFCA0AE506;1700.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+(rerunfilecheck)             Checksum: 7F71B67DC50BC715656BB509E8559F84;2630.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
  ) 
 Here is how much of TeX's memory you used:
- 13536 strings out of 492995
- 187533 string characters out of 6132704
- 278900 words of memory out of 5000000
- 16777 multiletter control sequences out of 15000+600000
+ 13584 strings out of 492995
+ 188501 string characters out of 6132704
+ 280498 words of memory out of 5000000
+ 16806 multiletter control sequences out of 15000+600000
  44586 words of font info for 60 fonts, out of 8000000 for 9000
  1142 hyphenation exceptions out of 8191
- 37i,11n,45p,831b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,12n,45p,831b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/
 2017/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2017/t
 exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/
 fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on XLQSI.pdf (15 pages, 141601 bytes).
+Output written on XLQSI.pdf (17 pages, 311033 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 146 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 169 words of extra memory for PDF output out of 10000 (max. 10000000)
 

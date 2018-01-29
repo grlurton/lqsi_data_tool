@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Collecting data" href="fill_data_entry.html" />
-    <link rel="prev" title="General Presentation" href="intro.html" />
+    <link rel="prev" title="General Introduction" href="general.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -44,19 +44,64 @@
 <h1>Setting-up a Data entry file<a class="headerlink" href="#setting-up-a-data-entry-file" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="downloading-and-unpacking">
 <h2>Downloading and unpacking<a class="headerlink" href="#downloading-and-unpacking" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>Download the most recent version of the files should be downloaded on <a class="reference external" href="https://github.com/grlurton/xlqsi/blob/master/xlqsi.zip">https://github.com/grlurton/xlqsi/blob/master/xlqsi.zip</a>. The zip file contains the two modules, as well as the Python libraries necessary to run the different contents.</li>
+<li>Copy the zipfile in the directory you want to use for your project.</li>
+<li>Unzip the zipfile.</li>
+</ol>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">For all the data entry setup, it is important keep the data entry file in the same directory as the <em>build</em> folder, so that it can access the necessary libraries.</p>
+</div>
+<p>Once  you open the Excel files, you will need to allow macros to be able to use some of the functions.</p>
+<div class="figure" id="security-check">
+<img alt="_images/security_check.png" src="_images/security_check.png" />
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Allowing macros (french translation)</span></p>
+</div>
 </div>
 <div class="section" id="set-language">
 <h2>Set language<a class="headerlink" href="#set-language" title="Permalink to this headline">¶</a></h2>
 <p>It is currently possible to use XLQSI in five different languages. The English, French, Russian and Spanish versions have been directly taken from the WHO’s website. The Khmer translation was made by ITech’s team in Cambodia.</p>
-<p>Language selection happens on the first tab of the data entry workbook, just by choosing the desired language in the dropdown menu as shown in <a class="reference internal" href="#translation"><span class="std std-numref">Fig. 1</span></a> .</p>
+<p>Language selection happens on the first tab of the data entry workbook, just by choosing the desired language in the dropdown menu as shown in <a class="reference internal" href="#translation"><span class="std std-numref">Fig. 2</span></a>.</p>
 <div class="figure" id="translation">
 <img alt="_images/translation_image.png" src="_images/translation_image.png" />
+<p class="caption"><span class="caption-number">Fig. 2 </span><span class="caption-text">Setting the translation</span></p>
 </div>
 <p>Adding a new translation language to XLQSI is a simple even if very systematic task. The procedure to adapt translations or add new ones is described in <a class="reference internal" href="technical.html"><span class="doc">technical documentation</span></a>.</p>
 </div>
 <div class="section" id="define-the-completion-checks">
 <span id="id1"></span><h2>Define the completion checks<a class="headerlink" href="#define-the-completion-checks" title="Permalink to this headline">¶</a></h2>
-<p>The second step in setting-up a data entry file is to create the completion checks for each activity. To understand the link between the two items, please refer to the <a class="reference internal" href="intro.html"><span class="doc">introductory content</span></a>.</p>
+<p>To get more background on the difference between the <em>checklist items</em> and the <em>completion checks</em> please refer to the <a class="reference internal" href="intro.html"><span class="doc">introductory content</span></a>.</p>
+<p>Completion checks are defined by the users to adapt generic checklist items to a specific context. For example, one of the checklist items defined by WHO are “Are sharps securely and safely incinerated without the risk for needle accidents?”. In Cambodia, for this item to be validated, it necessitated the completion of three completion checks :
+1. All sharps wastes are stored in sharps container,
+2. Sharps containers are autoclaved and
+3. Sharps containers are incinerated properly</p>
+<p>We encourage each user to think on how much they need to adapt completion checks to their own context. For users using XLQSI in the context of the implementation of national policies, they should refer to national norms and procedures to accurately define completion checks. Additionally, different completion checks may have to be defined for different types of laboratories. For examples of how completion checks can be defined, we share the example of how ITech has been defining them in <a class="reference external" href="https://github.com/grlurton/xlqsi/tree/master/examples">Cambodia in XLSQI’s repository examples</a>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is not necessary to define completion checks for all checklist items. For checklist items that are directly applicable to the user’s situation, the user will be able to validate the item directly during data entry.</p>
+</div>
+<p>The definition of the completion checks is made in two steps:</p>
+<ol class="arabic simple">
+<li>In each <em>Criterias</em> sheet (<em>Phase1 - Criterias</em>, <em>Phase2 - Criterias</em>, <em>Phase3 - Criterias</em> and <em>Phase4 - Criterias</em>), in the <em>Completion Check</em> columns, the user can define the completion checks he needs. In <a class="reference internal" href="#define-completion-check"><span class="std std-numref">Fig. 3</span></a>, we can see how the checklist item <em>Have critical environmental/equipment parameters been identified?</em> was adapted into four completion checks.</li>
+</ol>
+<div class="figure" id="define-completion-check">
+<img alt="_images/define_completion_check.png" src="_images/define_completion_check.png" />
+<p class="caption"><span class="caption-number">Fig. 3 </span><span class="caption-text">Examples of completion checks for a given checklist item</span></p>
+</div>
+<p>Also, you can access each of the sheet through the links in the dedicated box in the  <em>Getting Started</em> sheet (see <a class="reference internal" href="#click-completion"><span class="std std-numref">Fig. 4</span></a>).</p>
+<ol class="arabic simple" start="2">
+<li>The goal of XLQSI is to make data collection easier. Once all the completion checks have been defined for each phase, you can thus import them in synthetic lists for each phase. This is done by clicking on the <em>Extract Criterias Checklist</em> in the <em>Getting Started</em> sheet. On the right side of <a class="reference internal" href="#click-completion"><span class="std std-numref">Fig. 4</span></a>, you can see a counter. This count shows how many completion checks have been imported. Wait until the counter stops going up before modifying completion checks.</li>
+</ol>
+<div class="figure" id="click-completion">
+<img alt="_images/import_checklist.png" src="_images/import_checklist.png" />
+<p class="caption"><span class="caption-number">Fig. 4 </span><span class="caption-text">Completion checks importation</span></p>
+</div>
+<p>The completion of these lists is explained in the section on <a class="reference internal" href="fill_data_entry.html"><span class="doc">data entry</span></a>.</p>
+</div>
+<div class="section" id="freezing-the-data-entry-file">
+<h2>Freezing the data entry file<a class="headerlink" href="#freezing-the-data-entry-file" title="Permalink to this headline">¶</a></h2>
+<p>It may be useful to freeze the data entry file, to prevent undue modification by users, or to make its use easier. In the current stage of XLQSI, there is no systematic way to do it, and we welcome feedback of users regarding which aspect of the file could be deleted or frozen (this can be communicated through the <a class="reference external" href="https://github.com/grlurton/xlqsi/issues/2">dedicated github issue</a> ).</p>
 </div>
 </div>
 
@@ -69,7 +114,7 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="intro.html" title="previous chapter">General Presentation</a></li>
+      <li>Previous: <a href="general.html" title="previous chapter">General Introduction</a></li>
       <li>Next: <a href="fill_data_entry.html" title="next chapter">Collecting data</a></li>
   </ul></li>
 </ul>
@@ -87,10 +132,12 @@
 <h3><a href="index.html">Table Of Contents</a></h3>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">General Presentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general.html">General Introduction</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Setting-up a Data entry file</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-and-unpacking">Downloading and unpacking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#set-language">Set language</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#define-the-completion-checks">Define the completion checks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#freezing-the-data-entry-file">Freezing the data entry file</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="fill_data_entry.html">Collecting data</a></li>

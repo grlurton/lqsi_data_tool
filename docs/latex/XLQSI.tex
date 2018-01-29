@@ -115,47 +115,143 @@ Once a data entry template is defined, it can be shared and used in different la
 The data visualization module is a separate Excel workbook, in which the user can compile all the different data collection iterations for a given laboratory, and visualize the evolutions of the performance, and the strong and weak points of this facility. The use of this module is described in the {\hyperref[\detokenize{data_viz::doc}]{\sphinxcrossref{\DUrole{doc}{Data Visualization}}}} page.
 
 
+\chapter{General Introduction}
+\label{\detokenize{general::doc}}\label{\detokenize{general:general-introduction}}
+\begin{sphinxadmonition}{note}{\label{general:index-0}Todo:}
+Description of different tabs / sheets
+\end{sphinxadmonition}
+
+\begin{sphinxadmonition}{note}{\label{general:index-1}Todo:}
+General workflow and use cases
+\end{sphinxadmonition}
+
+
 \chapter{Setting-up a Data entry file}
-\label{\detokenize{create_data_entry:setting-up-a-data-entry-file}}\label{\detokenize{create_data_entry::doc}}
+\label{\detokenize{create_data_entry::doc}}\label{\detokenize{create_data_entry:setting-up-a-data-entry-file}}
 
 \section{Downloading and unpacking}
-\label{\detokenize{create_data_entry:downloading-and-unpacking}}
+\label{\detokenize{create_data_entry:downloading-and-unpacking}}\begin{enumerate}
+\item {} 
+Download the most recent version of the files should be downloaded on \sphinxurl{https://github.com/grlurton/xlqsi/blob/master/xlqsi.zip}. The zip file contains the two modules, as well as the Python libraries necessary to run the different contents.
+
+\item {} 
+Copy the zipfile in the directory you want to use for your project.
+
+\item {} 
+Unzip the zipfile.
+
+\end{enumerate}
+
+\begin{sphinxadmonition}{warning}{Warning:}
+For all the data entry setup, it is important keep the data entry file in the same directory as the \sphinxstyleemphasis{build} folder, so that it can access the necessary libraries.
+\end{sphinxadmonition}
+
+Once  you open the Excel files, you will need to allow macros to be able to use some of the functions.
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{security_check}.png}
+\caption{Allowing macros (french translation)}\label{\detokenize{create_data_entry:security-check}}\end{figure}
+
 
 \section{Set language}
 \label{\detokenize{create_data_entry:set-language}}
 It is currently possible to use XLQSI in five different languages. The English, French, Russian and Spanish versions have been directly taken from the WHO’s website. The Khmer translation was made by ITech’s team in Cambodia.
 
-Language selection happens on the first tab of the data entry workbook, just by choosing the desired language in the dropdown menu as shown in \hyperref[\detokenize{create_data_entry:translation}]{Fig.\@ \ref{\detokenize{create_data_entry:translation}}} .
+Language selection happens on the first tab of the data entry workbook, just by choosing the desired language in the dropdown menu as shown in \hyperref[\detokenize{create_data_entry:translation}]{Fig.\@ \ref{\detokenize{create_data_entry:translation}}}.
 
 \begin{figure}[htbp]
 \centering
+\capstart
 
 \noindent\sphinxincludegraphics{{translation_image}.png}
-\label{\detokenize{create_data_entry:translation}}\end{figure}
+\caption{Setting the translation}\label{\detokenize{create_data_entry:translation}}\end{figure}
 
 Adding a new translation language to XLQSI is a simple even if very systematic task. The procedure to adapt translations or add new ones is described in {\hyperref[\detokenize{technical::doc}]{\sphinxcrossref{\DUrole{doc}{technical documentation}}}}.
 
 
 \section{Define the completion checks}
-\label{\detokenize{create_data_entry:id1}}\label{\detokenize{create_data_entry:define-the-completion-checks}}
-The second step in setting-up a data entry file is to create the completion checks for each activity. To understand the link between the two items, please refer to the {\hyperref[\detokenize{intro::doc}]{\sphinxcrossref{\DUrole{doc}{introductory content}}}}.
+\label{\detokenize{create_data_entry:define-the-completion-checks}}\label{\detokenize{create_data_entry:id1}}
+To get more background on the difference between the \sphinxstyleemphasis{checklist items} and the \sphinxstyleemphasis{completion checks} please refer to the {\hyperref[\detokenize{intro::doc}]{\sphinxcrossref{\DUrole{doc}{introductory content}}}}.
+
+Completion checks are defined by the users to adapt generic checklist items to a specific context. For example, one of the checklist items defined by WHO are “Are sharps securely and safely incinerated without the risk for needle accidents?”. In Cambodia, for this item to be validated, it necessitated the completion of three completion checks :
+1. All sharps wastes are stored in sharps container,
+2. Sharps containers are autoclaved and
+3. Sharps containers are incinerated properly
+
+We encourage each user to think on how much they need to adapt completion checks to their own context. For users using XLQSI in the context of the implementation of national policies, they should refer to national norms and procedures to accurately define completion checks. Additionally, different completion checks may have to be defined for different types of laboratories. For examples of how completion checks can be defined, we share the example of how ITech has been defining them in \sphinxhref{https://github.com/grlurton/xlqsi/tree/master/examples}{Cambodia in XLSQI’s repository examples}.
+
+\begin{sphinxadmonition}{note}{Note:}
+It is not necessary to define completion checks for all checklist items. For checklist items that are directly applicable to the user’s situation, the user will be able to validate the item directly during data entry.
+\end{sphinxadmonition}
+
+The definition of the completion checks is made in two steps:
+\begin{enumerate}
+\item {} 
+In each \sphinxstyleemphasis{Criterias} sheet (\sphinxstyleemphasis{Phase1 - Criterias}, \sphinxstyleemphasis{Phase2 - Criterias}, \sphinxstyleemphasis{Phase3 - Criterias} and \sphinxstyleemphasis{Phase4 - Criterias}), in the \sphinxstyleemphasis{Completion Check} columns, the user can define the completion checks he needs. In \hyperref[\detokenize{create_data_entry:define-completion-check}]{Fig.\@ \ref{\detokenize{create_data_entry:define-completion-check}}}, we can see how the checklist item \sphinxstyleemphasis{Have critical environmental/equipment parameters been identified?} was adapted into four completion checks.
+
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{define_completion_check}.png}
+\caption{Examples of completion checks for a given checklist item}\label{\detokenize{create_data_entry:define-completion-check}}\end{figure}
+
+Also, you can access each of the sheet through the links in the dedicated box in the  \sphinxstyleemphasis{Getting Started} sheet (see \hyperref[\detokenize{create_data_entry:click-completion}]{Fig.\@ \ref{\detokenize{create_data_entry:click-completion}}}).
+\begin{enumerate}
+\setcounter{enumi}{1}
+\item {} 
+The goal of XLQSI is to make data collection easier. Once all the completion checks have been defined for each phase, you can thus import them in synthetic lists for each phase. This is done by clicking on the \sphinxstyleemphasis{Extract Criterias Checklist} in the \sphinxstyleemphasis{Getting Started} sheet. On the right side of \hyperref[\detokenize{create_data_entry:click-completion}]{Fig.\@ \ref{\detokenize{create_data_entry:click-completion}}}, you can see a counter. This count shows how many completion checks have been imported. Wait until the counter stops going up before modifying completion checks.
+
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics{{import_checklist}.png}
+\caption{Completion checks importation}\label{\detokenize{create_data_entry:click-completion}}\end{figure}
+
+The completion of these lists is explained in the section on {\hyperref[\detokenize{fill_data_entry::doc}]{\sphinxcrossref{\DUrole{doc}{data entry}}}}.
+
+
+\section{Freezing the data entry file}
+\label{\detokenize{create_data_entry:freezing-the-data-entry-file}}
+It may be useful to freeze the data entry file, to prevent undue modification by users, or to make its use easier. In the current stage of XLQSI, there is no systematic way to do it, and we welcome feedback of users regarding which aspect of the file could be deleted or frozen (this can be communicated through the \sphinxhref{https://github.com/grlurton/xlqsi/issues/2}{dedicated github issue} ).
 
 
 \chapter{Collecting data}
-\label{\detokenize{fill_data_entry:collecting-data}}\label{\detokenize{fill_data_entry::doc}}
+\label{\detokenize{fill_data_entry::doc}}\label{\detokenize{fill_data_entry:collecting-data}}
+
+\section{Importing Equipment List}
+\label{\detokenize{fill_data_entry:importing-equipment-list}}
+
+\section{Filling in completion checks}
+\label{\detokenize{fill_data_entry:filling-in-completion-checks}}
+
+\section{Validation checklist items}
+\label{\detokenize{fill_data_entry:validation-checklist-items}}
 
 \chapter{Data vizualisation}
 \label{\detokenize{data_viz::doc}}\label{\detokenize{data_viz:data-vizualisation}}
+In order
+
 
 \chapter{Technical Description}
-\label{\detokenize{technical:technical-description}}\label{\detokenize{technical::doc}}
+\label{\detokenize{technical::doc}}\label{\detokenize{technical:technical-description}}
 \begin{sphinxadmonition}{note}{\label{technical:index-0}Todo:}
 Include explanation of development and compiling of XLQSI
 \end{sphinxadmonition}
 
 
 \chapter{Helping improving XLQSI}
-\label{\detokenize{contribute:helping-improving-xlqsi}}\label{\detokenize{contribute::doc}}
+\label{\detokenize{contribute::doc}}\label{\detokenize{contribute:helping-improving-xlqsi}}
+A PDF version of this documentation can be downloaded \sphinxhref{https://github.com/grlurton/xlqsi/raw/master/docs/latex/XLQSI.pdf}{here}.
+
 
 
 \renewcommand{\indexname}{Index}

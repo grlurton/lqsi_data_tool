@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex XLQSI.idx"] 1517132308 "XLQSI.idx" "XLQSI.ind" "XLQSI" 1517132310
-  "XLQSI.idx" 1517132309 0 d41d8cd98f00b204e9800998ecf8427e ""
+["makeindex XLQSI.idx"] 1517132308 "XLQSI.idx" "XLQSI.ind" "XLQSI" 1517208524
+  "XLQSI.idx" 1517208523 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
-  "XLQSI.ind"
   "XLQSI.ilg"
-["pdflatex"] 1517132309 "XLQSI.tex" "XLQSI.pdf" "XLQSI" 1517132310
+  "XLQSI.ind"
+["pdflatex"] 1517208523 "XLQSI.tex" "XLQSI.pdf" "XLQSI" 1517208524
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/map/fontname/texfonts.map" 1480098670 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/courier/pcrr8t.tfm" 1480098688 1384 4632f5e54900a7dadbb83f555bc61e56 ""
@@ -133,21 +133,24 @@
   "/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1495593472 2350277 a699055bee05bf8a40b0504752487295 ""
   "/usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt" 1503985133 4129592 6f8bca1ea49a986863310199bb8dbcc5 ""
   "/usr/local/texlive/2017/texmf.cnf" 1495593465 577 2b71d4d888f9e5560b2e99985915a9fa ""
-  "XLQSI.aux" 1517132310 4514 9f10aafee6cf5a562f286b5702721658 ""
+  "XLQSI.aux" 1517208524 6685 4a4680eafed99e4c3b0003e79478a4da ""
   "XLQSI.ind" 1517132308 0 d41d8cd98f00b204e9800998ecf8427e "makeindex XLQSI.idx"
-  "XLQSI.out" 1517132310 1700 d6c02aa178f3340459da98efca0ae506 ""
-  "XLQSI.tex" 1517132306 10357 e002ef8da106271522b7d7395feb9da6 ""
-  "XLQSI.toc" 1517132310 1055 1fd5fa52a198300d268bbf466ea60dad ""
+  "XLQSI.out" 1517208524 2630 7f71b67dc50bc715656bb509e8559f84 ""
+  "XLQSI.tex" 1517208521 16343 ceded115f2e9ee50cbfa8df8ad922a77 ""
+  "XLQSI.toc" 1517208524 1473 f6e65e4fe29c902de5ab66c51f89f28b ""
+  "define_completion_check.png" 1517200456 86710 1e3aae2222a29bd91a6087c45b5d1fb3 ""
   "footnotehyper-sphinx.sty" 1516747766 8841 e18cbb7bca599a223414f9b8a156abee ""
+  "import_checklist.png" 1517206543 157161 8f6b56f739b9d2562d0e51da4af81bdd ""
+  "security_check.png" 1517203970 16257 5f58234673929087d150e61b9b6dbcb6 ""
   "sphinx.sty" 1516747766 64257 27389b3f9c27254b2f20d236bdb2ebcf ""
-  "sphinxhighlight.sty" 1517132306 8137 38a433148fcb7611515a989ff1750dd5 ""
+  "sphinxhighlight.sty" 1517208520 8137 38a433148fcb7611515a989ff1750dd5 ""
   "sphinxmanual.cls" 1516747766 3589 0b0aac49c6f36925cf5f9d524a75a978 ""
   "sphinxmulticell.sty" 1516747766 14618 0defbdc8536ad2e67f1eac6a1431bc55 ""
   "translation_image.png" 1517115948 100210 ca76ba165239d03655e965c7eda68190 ""
   (generated)
-  "XLQSI.pdf"
   "XLQSI.toc"
   "XLQSI.out"
-  "XLQSI.log"
-  "XLQSI.aux"
+  "XLQSI.pdf"
   "XLQSI.idx"
+  "XLQSI.aux"
+  "XLQSI.log"

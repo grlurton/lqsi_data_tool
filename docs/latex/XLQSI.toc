@@ -4,11 +4,16 @@
 \contentsline {section}{\numberline {1.2}XLQSI overview}{2}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Data Entry Module}{2}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Data Visualization Module}{2}{subsection.1.2.2}
-\contentsline {chapter}{\numberline {2}Setting-up a Data entry file}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Downloading and unpacking}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}Set language}{3}{section.2.2}
-\contentsline {section}{\numberline {2.3}Define the completion checks}{3}{section.2.3}
-\contentsline {chapter}{\numberline {3}Collecting data}{5}{chapter.3}
-\contentsline {chapter}{\numberline {4}Data vizualisation}{7}{chapter.4}
-\contentsline {chapter}{\numberline {5}Technical Description}{9}{chapter.5}
-\contentsline {chapter}{\numberline {6}Helping improving XLQSI}{11}{chapter.6}
+\contentsline {chapter}{\numberline {2}General Introduction}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Setting-up a Data entry file}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Downloading and unpacking}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Set language}{5}{section.3.2}
+\contentsline {section}{\numberline {3.3}Define the completion checks}{6}{section.3.3}
+\contentsline {section}{\numberline {3.4}Freezing the data entry file}{6}{section.3.4}
+\contentsline {chapter}{\numberline {4}Collecting data}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}Importing Equipment List}{7}{section.4.1}
+\contentsline {section}{\numberline {4.2}Filling in completion checks}{7}{section.4.2}
+\contentsline {section}{\numberline {4.3}Validation checklist items}{7}{section.4.3}
+\contentsline {chapter}{\numberline {5}Data vizualisation}{9}{chapter.5}
+\contentsline {chapter}{\numberline {6}Technical Description}{11}{chapter.6}
+\contentsline {chapter}{\numberline {7}Helping improving XLQSI}{13}{chapter.7}
